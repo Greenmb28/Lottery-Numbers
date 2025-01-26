@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3 class="whatLotteryNumbers">
+
+        </h3>
+
+        <div class="lotto">
+
+        </div>
+    </div>
+    <script>
+        
+
+        let divLotto = document.querySelector(".lotto");
+
+        let heading = document.querySelector(".whatLotteryNumbers")
+
+        let num = Math.floor(Math.random() * 50);
+
+        num=parseInt(num);
+        heading.textContent =  " Lottery Numbers";
+       
+
+        let numStr = ""; 
+
+        for (let num = 0; num < 6; num++)
+        
+        {
+            let randomNum = Math.floor(Math.random() * 50);
+
+            numStr += `${randomNum} <br>`;
+        }
+
+
+        for (let num = 0; num < 6; num++)
+        {
+           let randomNum = Math.floor(Math.random() * 50);
+           console.log(randomNum);
+           
+        }
+        divLotto.innerHTML = numStr;
+        
+    
+    </script>
+    
+</body>
+</html>
